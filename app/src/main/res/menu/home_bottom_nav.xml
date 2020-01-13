@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_nav_home"
+        android:icon="@drawable/home"
+        android:title="Home">
+    </item>
+
+    <item
+        android:id="@+id/bottom_nav_chats"
+        android:icon="@drawable/chats"
+        android:title="Chats">
+    </item>
+
+    <item
+        android:id="@+id/bottom_nav_my_doctors"
+        android:icon="@drawable/my_doctors"
+        android:title="My Doctors">
+    </item>
+
+    <item
+        android:id="@+id/bottom_nav_my_appts"
+        android:icon="@drawable/appts"
+        android:title="My Appts.">
+    </item>
+
+    <item
+        android:id="@+id/bottom_nav_profile"
+        android:icon="@drawable/profile"
+        android:title="Profile">
+    </item>
+</menu>
