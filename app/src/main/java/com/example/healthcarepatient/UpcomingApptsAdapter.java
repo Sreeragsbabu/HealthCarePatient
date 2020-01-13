@@ -1,25 +1,29 @@
 package com.example.healthcarepatient;
 
-import android.content.Context;
-import android.util.AttributeSet;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class UpcomingApptsAdapter extends RecyclerView<UpcomingApptsAdapter.UpcomingViewHolder>{
+public class UpcomingApptsAdapter extends RecyclerView.Adapter<UpcomingApptsAdapter.UpcomingViewHolder>{
 
-    public UpcomingApptsAdapter(@NonNull Context context) {
-        super(context);
+    @NonNull
+    @Override
+    public UpcomingViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.upcoming_appts_item,parent,false);
+        return new UpcomingViewHolder(view);
     }
 
-    public UpcomingApptsAdapter(@NonNull Context context, @Nullable AttributeSet attrs) {
-        super(context, attrs);
+    @Override
+    public void onBindViewHolder(@NonNull UpcomingViewHolder holder, int position) {
+
     }
 
-    public UpcomingApptsAdapter(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
+    @Override
+    public int getItemCount() {
+        return 0;
     }
 
     public static class UpcomingViewHolder extends RecyclerView.ViewHolder {

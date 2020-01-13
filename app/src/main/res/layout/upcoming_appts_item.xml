@@ -44,7 +44,7 @@
             app:srcCompat="@drawable/btn_circle_green" />
 
         <TextView
-            android:id="@+id/textView49"
+            android:id="@+id/doc_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
@@ -60,7 +60,7 @@
             app:layout_constraintTop_toTopOf="@+id/imageview_booked_doctor" />
 
         <TextView
-            android:id="@+id/textView65"
+            android:id="@+id/doc_category"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
@@ -70,11 +70,11 @@
             android:textSize="14sp"
             android:textStyle="normal"
             app:layout_constraintEnd_toStartOf="@+id/imageView29"
-            app:layout_constraintStart_toStartOf="@+id/textView49"
-            app:layout_constraintTop_toBottomOf="@+id/textView49" />
+            app:layout_constraintStart_toStartOf="@+id/doc_name"
+            app:layout_constraintTop_toBottomOf="@+id/doc_name" />
 
         <TextView
-            android:id="@+id/textView66"
+            android:id="@+id/consultation_type"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
@@ -84,9 +84,9 @@
             android:textSize="14sp"
             android:textStyle="normal"
             app:layout_constraintBottom_toBottomOf="@+id/imageview_booked_doctor"
-            app:layout_constraintEnd_toEndOf="@+id/textView65"
-            app:layout_constraintStart_toStartOf="@+id/textView65"
-            app:layout_constraintTop_toBottomOf="@+id/textView65" />
+            app:layout_constraintEnd_toEndOf="@+id/doc_category"
+            app:layout_constraintStart_toStartOf="@+id/doc_category"
+            app:layout_constraintTop_toBottomOf="@+id/doc_category" />
 
         <ImageView
             android:id="@+id/imageView29"
@@ -198,7 +198,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView68" />
 
         <TextView
-            android:id="@+id/textView71"
+            android:id="@+id/patient_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
