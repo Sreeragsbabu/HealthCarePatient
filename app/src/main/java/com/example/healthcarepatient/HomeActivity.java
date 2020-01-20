@@ -19,12 +19,13 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView = findViewById(R.id.home_bottom_nav);
         bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
 
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
-        Integer fragmentId = extras.getInt("F_id");
+        Integer fragmentId = 1;
+//        Integer fragmentId = extras.getInt("F_id");
 
         Fragment selectedFragment = null;
         switch (fragmentId) {

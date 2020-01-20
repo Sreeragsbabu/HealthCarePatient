@@ -55,7 +55,7 @@
             android:textColor="#de000000"
             android:textSize="18sp"
             android:textStyle="normal"
-            app:layout_constraintEnd_toStartOf="@+id/imageView29"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewDetails"
             app:layout_constraintStart_toEndOf="@+id/imageview_booked_doctor"
             app:layout_constraintTop_toTopOf="@+id/imageview_booked_doctor" />
 
@@ -69,7 +69,7 @@
             android:textColor="#60000000"
             android:textSize="14sp"
             android:textStyle="normal"
-            app:layout_constraintEnd_toStartOf="@+id/imageView29"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewDetails"
             app:layout_constraintStart_toStartOf="@+id/doc_name"
             app:layout_constraintTop_toBottomOf="@+id/doc_name" />
 
@@ -89,7 +89,7 @@
             app:layout_constraintTop_toBottomOf="@+id/doc_category" />
 
         <ImageView
-            android:id="@+id/imageView29"
+            android:id="@+id/imageViewDetails"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"

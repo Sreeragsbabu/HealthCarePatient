@@ -17,13 +17,6 @@ import com.google.android.material.tabs.TabLayout;
 
 public class MyAppointmentFragment extends Fragment {
 
-//    private Toolbar toolbar;
-//    private TabLayout tabLayout;
-//    ViewPager viewPager;
-//    BookApptPageAdapter bookApptPageAdapter;
-//    private TabItem tabUpcoming;
-//    private TabItem tabPast;
-
     Toolbar toolbar;
     TabLayout tabLayout;
     AppointmentPageAdapter appointmentPageAdapter;
@@ -55,7 +48,6 @@ public class MyAppointmentFragment extends Fragment {
 
                 }
                 else if (tab.getPosition()==1) {
-
 
                 }
             }

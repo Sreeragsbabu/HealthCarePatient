@@ -49,8 +49,6 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
-
-
         constraintLayoutNext.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -68,8 +66,6 @@ public class ProfileActivity extends AppCompatActivity {
                     lastname.getText().clear();
                     firstname.requestFocus();
                 }
-
-
             }
         });
     }

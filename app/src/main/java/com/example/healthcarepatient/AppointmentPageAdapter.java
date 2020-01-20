@@ -7,7 +7,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 public class AppointmentPageAdapter extends FragmentPagerAdapter {
 
-    private int num_tabs;
+    private int num_tabs = 2;
 
     public AppointmentPageAdapter(@NonNull FragmentManager fm) {
         super(fm);

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageview_fav_doctor"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:src="@drawable/doctor1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/imageView_online"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageview_fav_doctor"
+            app:layout_constraintEnd_toEndOf="@+id/imageview_fav_doctor"
+            app:srcCompat="@drawable/btn_circle_green" />
+
+        <TextView
+            android:id="@+id/doc_name_fav"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="4sp"
+            android:text="Dr. Sherley Billman"
+            android:textColor="#de000000"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/imageview_fav_doctor"
+            app:layout_constraintTop_toTopOf="@+id/imageview_fav_doctor" />
+
+        <TextView
+            android:id="@+id/doc_category_fav"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="6sp"
+            android:text="Obstetrics"
+            android:textColor="#60000000"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@+id/doc_name_fav"
+            app:layout_constraintStart_toStartOf="@+id/doc_name_fav"
+            app:layout_constraintTop_toBottomOf="@+id/doc_name_fav" />
+
+        <TextView
+            android:id="@+id/consultation_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="6sp"
+            android:text="Morya Clinics"
+            android:textColor="#89000000"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/imageview_fav_doctor"
+            app:layout_constraintEnd_toEndOf="@+id/doc_category_fav"
+            app:layout_constraintStart_toStartOf="@+id/doc_category_fav"
+            app:layout_constraintTop_toBottomOf="@+id/doc_category_fav" />
+
+        <ImageView
+            android:id="@+id/imageView_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout25"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayout25"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout25"
+            app:srcCompat="@drawable/ic_favourite_orange" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_blue_rad_2"
+            android:paddingLeft="12dp"
+            android:paddingTop="5dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/consultation_type"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/textView123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="8sp"
+                android:text="Call"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view37"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/underline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/consultation_type"
+            app:layout_constraintTop_toBottomOf="@+id/consultation_type" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

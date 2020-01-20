@@ -45,6 +45,7 @@
 <!--        app:layout_constraintEnd_toEndOf="parent"-->
 <!--        app:layout_constraintStart_toStartOf="parent"></LinearLayout>-->
 
+
     <ViewFlipper
         android:id="@+id/viewFlipperHome"
         android:layout_width="0dp"
@@ -53,9 +54,25 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
         app:layout_constraintEnd_toEndOf="@id/guideline30"
         app:layout_constraintStart_toStartOf="@id/guideline29"
-        app:layout_constraintTop_toTopOf="@+id/guideline31">
+        app:layout_constraintTop_toTopOf="@+id/guideline31"></ViewFlipper>
 
-    </ViewFlipper>
+    <ImageView
+        android:id="@+id/imageView_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_notification" />
+
+    <ImageView
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        app:layout_constraintRight_toRightOf="@+id/imageView_notification"
+        app:layout_constraintTop_toTopOf="@+id/imageView_notification"
+        android:background="@drawable/btn_circle_red"/>
 
     <LinearLayout
         android:id="@+id/linearLayout3"
@@ -68,6 +85,7 @@
         app:layout_constraintTop_toBottomOf="@+id/viewFlipperHome">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutDoctors"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1">
@@ -85,14 +103,14 @@
                 android:id="@+id/textView13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
-                android:fontFamily="sans-serif"
-                android:textStyle="normal"
-                android:textColor="#de000000"
-                android:lineSpacingExtra="6sp"
-                android:gravity="center_horizontal"
                 android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="6sp"
                 android:text="Doctors"
+                android:textColor="#de000000"
+                android:textSize="14sp"
+                android:textStyle="normal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/imageView6"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -102,6 +120,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutMedications"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1">
@@ -119,14 +138,14 @@
                 android:id="@+id/textView25"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
-                android:fontFamily="sans-serif"
-                android:textStyle="normal"
-                android:textColor="#de000000"
-                android:lineSpacingExtra="6sp"
-                android:gravity="center_horizontal"
                 android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="6sp"
                 android:text="Medications"
+                android:textColor="#de000000"
+                android:textSize="14sp"
+                android:textStyle="normal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/imageView14"
                 app:layout_constraintStart_toStartOf="@+id/imageView14"
@@ -134,6 +153,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutEHRfiles"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1">
@@ -151,14 +171,14 @@
                 android:id="@+id/textView27"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
-                android:fontFamily="sans-serif"
-                android:textStyle="normal"
-                android:textColor="#de000000"
-                android:lineSpacingExtra="6sp"
-                android:gravity="center_horizontal"
                 android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="6sp"
                 android:text="EHR Files"
+                android:textColor="#de000000"
+                android:textSize="14sp"
+                android:textStyle="normal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/imageView15"
                 app:layout_constraintStart_toStartOf="@+id/imageView15"
@@ -166,6 +186,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutFavArticles"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1">
@@ -183,14 +204,14 @@
                 android:id="@+id/textView24"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
-                android:fontFamily="sans-serif"
-                android:textStyle="normal"
-                android:textColor="#de000000"
-                android:lineSpacingExtra="6sp"
-                android:gravity="center_horizontal"
                 android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="6sp"
                 android:text="Fav Articles"
+                android:textColor="#de000000"
+                android:textSize="14sp"
+                android:textStyle="normal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/imageView11"
                 app:layout_constraintStart_toStartOf="@+id/imageView11"

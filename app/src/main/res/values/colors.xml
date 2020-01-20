@@ -10,5 +10,6 @@
     <color name="black">#dd000000</color>
     <color name="light_black">#60000000</color>
     <color name="orange">#fdad3f</color>
+    <color name="red">#ff3b30</color>
 
 </resources>

@@ -1,8 +1,10 @@
 package com.example.healthcarepatient;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -22,6 +24,9 @@ import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
 
+
+    ConstraintLayout constraintLayoutMedications,constraintLayoutDoctors,constraintLayoutEHRfiles;
+    ImageView imageViewNotification;
     private int dotCount;
     ViewFlipper viewFlipper;
     LinearLayout linearLayoutDots;
@@ -50,7 +55,43 @@ public class HomeFragment extends Fragment {
         articles.add(article4);
         articles.add(article5);
 
-        viewFlipper =v.findViewById(R.id.viewFlipperHome);
+        imageViewNotification = v.findViewById(R.id.imageView_notification);
+        imageViewNotification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(),NotificationActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        constraintLayoutMedications = v.findViewById(R.id.constraintLayoutMedications);
+        constraintLayoutMedications.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),PillsReminderActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        constraintLayoutDoctors = v.findViewById(R.id.constraintLayoutDoctors);
+        constraintLayoutDoctors.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),DoctorsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        constraintLayoutEHRfiles = v.findViewById(R.id.constraintLayoutEHRfiles);
+        constraintLayoutEHRfiles.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),EHRActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        viewFlipper = v.findViewById(R.id.viewFlipperHome);
         linearLayoutDots = v.findViewById(R.id.lineaar_layout_dots);
 
         recyclerViewArticle = v.findViewById(R.id.recycler_article);

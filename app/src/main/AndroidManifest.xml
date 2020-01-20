@@ -14,20 +14,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PatientDetails"></activity>
-        <activity android:name=".BookAppointmentActivity">
-        </activity>
+        <activity android:name=".RecordForActivity"></activity>
+        <activity android:name=".UploadRecordActivity" />
+        <activity android:name=".EHRActivity" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".DoctorsActivity" />
+        <activity android:name=".MedicinesActivity" />
+        <activity android:name=".PillsReminderActivity" />
+        <activity android:name=".AppointmentDetails" />
+        <activity android:name=".PatientDetails" />
+        <activity android:name=".BookAppointmentActivity" />
         <activity android:name=".TimeSlotActivity" />
-        <activity android:name=".HomeActivity" >
-
-        </activity>
-        <activity android:name=".ProfileActivity" >
+        <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ProfileActivity" />
         <activity android:name=".VerifyOtpActivity" />
         <activity android:name=".CountryActivity" />
         <activity android:name=".LoginActivity" />
@@ -35,9 +40,7 @@
         <activity android:name=".PrivacyPolicyActivity" />
         <activity android:name=".TermsAndServicesActivity" />
         <activity android:name=".WelcomeActivity" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

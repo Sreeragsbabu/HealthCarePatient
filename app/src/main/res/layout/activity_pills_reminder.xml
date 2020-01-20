@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PillsReminderActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout10111"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_rectangle_light_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView219"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:id="@+id/textView711"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="4sp"
+            android:text="Pills Reminder"
+            android:textColor="#de000000"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView219"
+            app:layout_constraintEnd_toStartOf="@+id/imageView34"
+            app:layout_constraintStart_toEndOf="@+id/imageView219"
+            app:layout_constraintTop_toTopOf="@+id/imageView219" />
+
+        <View
+            android:id="@+id/view16"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/underline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView711" />
+
+        <ImageView
+            android:id="@+id/imageView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView711"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView711"
+            app:srcCompat="@drawable/ic_add_medicine" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout26"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="16dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout10111">
+
+        <TextView
+            android:id="@+id/textView72"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="3sp"
+            android:text="Medicines"
+            android:textColor="#89000000"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutPillsMorning"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/btn_circle_white1"
+            app:layout_constraintEnd_toStartOf="@+id/guideline34"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView72">
+
+            <TextView
+                android:id="@+id/textViewPillsMorning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="3sp"
+                android:text="Morning"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageViewPillsMor1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@+id/textViewPillsMorning"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPillsMorning"
+                app:srcCompat="@drawable/pills_blue" />
+
+            <ImageView
+                android:id="@+id/imageViewPillsMor2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewPillsMor1"
+                app:layout_constraintStart_toEndOf="@+id/imageViewPillsMor1"
+                app:layout_constraintTop_toTopOf="@+id/imageViewPillsMor1"
+                app:srcCompat="@drawable/circle_orange" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutPillsAfternoon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/btn_circle_white1"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayoutPillsMorning"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline34"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayoutPillsMorning">
+
+            <TextView
+                android:id="@+id/textViewPillsAfternoon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="3sp"
+                android:text="Afternoon"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageViewPillsAft1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@+id/textViewPillsAfternoon"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPillsAfternoon"
+                app:srcCompat="@drawable/pills_orange" />
+
+            <ImageView
+                android:id="@+id/imageViewPillsAft2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewPillsAft1"
+                app:layout_constraintStart_toEndOf="@+id/imageViewPillsAft1"
+                app:layout_constraintTop_toTopOf="@+id/imageViewPillsAft1"
+                app:srcCompat="@drawable/circle_blue" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutPillsEvening"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_circle_white1"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayoutPillsMorning"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayoutPillsMorning"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutPillsMorning">
+
+            <TextView
+                android:id="@+id/textViewPillsEvening"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="3sp"
+                android:text="Evening"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageViewPillsEve1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@+id/textViewPillsEvening"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPillsEvening"
+                app:srcCompat="@drawable/ic_syringe" />
+
+            <ImageView
+                android:id="@+id/imageViewPillsEve2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewPillsEve1"
+                app:layout_constraintStart_toEndOf="@+id/imageViewPillsEve1"
+                app:layout_constraintTop_toTopOf="@+id/imageViewPillsEve1"
+                app:srcCompat="@drawable/circle_orange" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutPillsNight"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_circle_white1"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayoutPillsEvening"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayoutPillsAfternoon"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayoutPillsAfternoon"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayoutPillsEvening">
+
+            <TextView
+                android:id="@+id/textViewPillsNight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="normal"
+                android:textColor="#333333"
+                android:lineSpacingExtra="3sp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="32dp"
+                android:text="Night"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageViewPillsNight1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@+id/textViewPillsNight"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPillsNight"
+                app:srcCompat="@drawable/pills_blue" />
+
+            <ImageView
+                android:id="@+id/imageViewPillsNight2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewPillsNight1"
+                app:layout_constraintStart_toEndOf="@+id/imageViewPillsNight1"
+                app:layout_constraintTop_toTopOf="@+id/imageViewPillsNight1"
+                app:srcCompat="@drawable/circle_red" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout27"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout26">
+
+        <TextView
+            android:id="@+id/textView95"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="3sp"
+            android:text="Favourites"
+            android:textColor="#89000000"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout27">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewPillsFavourite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
